@@ -5,6 +5,7 @@ function devolverPrimerElemento(array) {
    // Tu código:
 }
 
+
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
@@ -13,25 +14,56 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
-}
-
+} 
+     
+     function obtenerLargoDelArray(array) {
+        var lista = [1, 2, 'hola', 6, 'gato'];
+        return lista.length();
+     }
+     
+     
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
 }
-
+        
+     function incrementarPorUno(array) {  
+        
+        var numeros = [1, 2, 3. 4, 5];
+        var incremento = numeros.map((i) => { return i + 1 } );
+        return incremento;
+     }
+ 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
 }
-
+        
+        
+    function agregarItemAlFinalDelArray(array, elemento) {  
+       
+      var frutas = ['manzana', 'banana', 'pera'];
+      frutas.push('uva');
+      return frutas;
+    }
+           
+        
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
 }
+       
+       
+    function agregarItemAlComienzoDelArray(array, elemento) {
+       
+       var verduras = ['zanahoria', 'zapallo', 'lechuga'];
+       verduras.unshift('tomate');
+       return verduras;
+    }
+       
 
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
@@ -40,6 +72,15 @@ function dePalabrasAFrase(palabras) {
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
 }
+       
+       
+      function dePalabrasAFrase(palabras) {
+          
+         var palabras = ['Hola ', 'estudio ', 'Desarrollo ', 'Web'];
+         var frase = palabras.join('');
+         return palabras;
+      }
+       
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.

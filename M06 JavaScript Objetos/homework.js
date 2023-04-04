@@ -9,12 +9,36 @@ function crearGato(nombre, edad) {
    // Tu código:
 }
 
+     function crearGato(nombre, edad) {
+        
+        var gato = {
+          nombre: 'Kiara',
+          edad: 6
+        };
+        
+        gato.meow = 'Meow!';
+        return gato;
+
+
 function nuevoUsuario(nombre, email, password) {
    // Debes crear un nuevo objeto.
    // Este debe tener las propiedades: "nombre", "email" y "password" con sus respectivos valores.
    // Retornar el objeto.
    // Tu código:
 }
+
+
+     function nuevoUsuario(nombre, email, password) {
+      
+       Usuario = {
+          nombre: 'Rocio',
+          email: 'rnr1995@hotmail.com',
+          password: 'contraseña'
+       };
+      
+       return Usuario;
+     }
+       
 
 function agregarPropiedad(objeto, propiedad) {
    // Recibirás un objeto por parámetro.
@@ -23,6 +47,14 @@ function agregarPropiedad(objeto, propiedad) {
    // Retornar el objeto.
    // Tu código:
 }
+     
+     function agregarPropiedad(objeto, propiedad){
+      
+         var objeto = {};
+         objeto.propiedad = null;
+         return objeto;
+     }
+         
 
 function invocarMetodo(objeto, metodo) {
    // El parámetro "metodo" es un string que coincide con el nombre de una propiedad del objeto recibido.
@@ -30,37 +62,86 @@ function invocarMetodo(objeto, metodo) {
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
 }
-
+    
+      
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
    // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
    // Debes multiplicar este número por 5 y retornar el resultado.
    // Tu código:
 }
-
+ 
+        
+     
+     function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
+        var objetoMisterioso = "numeroMisterioso";
+        var numero = objetoMisterioso.to_i * 5;
+        return numero;
+     }
+        
+        
+     
 function eliminarPropiedad(objeto, propiedad) {
    // El parámetro "propiedad" es una propiedad del objeto que recibes.
    // Debes eliminarla del objeto y retornarlo finalmente.
    // Tu código:
 }
-
+        
+        
+     function eliminarPropiedad(objeto, propiedad) { 
+        var objeto = {
+            propiedad: "propiedad"
+        };
+        delete objeto.propiedad;
+        return objeto;
+     }
+        
+        
 function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 }
+        
+     function tieneEmail(objetoUsuario) {
+        var objetoUsuario = {
+           email: 'clave123'
+        };
+        var valor = objetoUsuario.hasOwnProperty('email');
+        return valor;
+     }
+       
 
 function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 }
+     
+        
+     function tienePropiedad(objeto, propiedad) {
+        var objeto = {
+           propiedad: "propiedad"
+        }
+        var nombre = objeto.hasOwnProperty('propiedad');
+        return nombre;
+     }
+        
 
 function verificarPassword(objetoUsuario, password) {
    // Verifica si la propiedad "password" del "objetoUsuario" coincide con el parámetro "password".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-}
-
+}   
+        
+     function verificarPassword(objetoUsuario, password) {
+        var objetoUsuario = "password";
+        if (objetoUsuario == "password"){
+            return true
+            } else {
+            return false
+            }
+        
+            
 function actualizarPassword(objetoUsuario, nuevaPassword) {
    // Reemplaza la contrseña guardada en la propiedad "password" del "objetoUsuario".
    // La nueva contraseña la recibes por parámetro.

@@ -16,11 +16,34 @@ function agregarSimboloExclamacion(str) {
    // Tu código:
 }
 
+
+
+    function agregarSimboloExclamacion(str) {
+    var exclamacion = str + "!";
+    console.log(exclamacion);
+    }
+
+    agregarSimboloExclamacion("hola")
+
+
+
+
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
 }
+
+
+
+    function combinarNombres(nombre, apellido) {
+    console.log('Soy ' + nombre + " " + apellido + '.');
+    }
+
+    combinarNombres('Rocio', 'Rocha')    
+
+
+
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
@@ -28,10 +51,33 @@ function obtenerSaludo(nombre) {
    // Tu código:
 }
 
+
+
+     function obtenerSaludo(nombre) {
+     console.log("Hola " + nombre + "!");
+     }
+
+     obtenerSaludo("Rocio")
+
+
+
+
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
 }
+
+
+
+     function obtenerAreaRectangulo(alto, ancho) {
+     var rectangulo = ancho * alto;
+     console.log(rectangulo);
+     }
+
+     obtenerAreaRectangulo(30, 20)    
+
+
+
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
@@ -43,6 +89,16 @@ function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
 }
+
+
+    function areaDelTriangulo(base, altura) {
+    var triangulo = (base * altura) / 2;
+    console.log(triangulo);
+    }
+
+    areaDelTriangulo(20,25)
+
+
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
